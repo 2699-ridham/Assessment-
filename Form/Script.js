@@ -82,16 +82,12 @@ const popUpFormDetails = () => {
     mob.innerHTML = "Mobile: " + mobile.value;
     if(select.options[select.selectedIndex].text !== "Choose Your Country"){
         country.innerHTML = "Country: " + select.options[select.selectedIndex].text;
-    }else{
-        country.innerHTML = "Country: ";
     }
     if (maleCheckbox.checked) {
         gender.innerHTML = "Gender: " + maleCheckbox.value;
     } else {
         if (femaleCheckbox.checked) {
             gender.innerHTML = "Gender: " + femaleCheckbox.value;
-        } else {
-            gender.innerHTML = "Gender: ";
         }
     }
 
@@ -190,7 +186,5 @@ const validateInputs = () => {
     if (select.options[select.selectedIndex].text == "Choose Your Country") {
         setError(select, "Please mention your country");
         valid = false;
-    }else{
-        setSuccess(select);
     }
 }
