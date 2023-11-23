@@ -1,0 +1,51 @@
+body {
+    background-color: rgb(49, 47, 47);
+}
+.container{
+    height: 90vh;
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rows{
+    height: 50vh;
+    width: 50vw;
+}
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.button {
+    cursor: pointer;
+    height: 3.5rem;
+    width: 5rem;
+    font-size: 1.5rem;
+    border: none;
+    color: white;
+}
+
+.row input {
+    width: 171px;
+    padding: 13px 34px;
+    margin: 0px;
+    border: none;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#symbol{
+    background-color: grey;
+}
+
+#AC{
+    background-color: rgb(19, 170, 170);
+}
+
+#digit{
+    background-color: rgba(0, 0, 0, 0.527);
+}

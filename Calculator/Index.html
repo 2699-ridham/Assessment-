@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="rows"> 
+            <div class="row">
+                <input class="input" type="text">
+                <button id="AC" class="button" onclick="cls()">AC</button>
+            </div>
+            <div class="row">
+                <button id="digit" class="button" onclick="display('9')">9</button>
+                <button id="digit" class="button" onclick="display('8')">8</button>
+                <button id="digit" id="digit" class="button" onclick="display('7')">7</button>
+                <button id="symbol" class="button" onclick="display('+')">+</button>
+            </div>
+            <div class="row">
+                <button id="digit" class="button" onclick="display('4')">4</button>
+                <button id="digit" class="button" onclick="display('5')">5</button>
+                <button id="digit" class="button" onclick="display('6')">6</button>
+                <button id="symbol" class="button" onclick="display('-')">-</button>
+            </div>
+            <div class="row">
+                <button id="digit" class="button" onclick="display('2')">2</button>
+                <button id="digit" class="button" onclick="display('1')">1</button>
+                <button id="digit" class="button" onclick="display('3')">3</button>
+                <button id="symbol" class="button" onclick="display('/')">/</button>
+            </div>
+            <div class="row">
+                <button id="digit" class="button" onclick="display('.')"">.</button>
+                <button id="digit" class="button" onclick="display('0')"">0</button>
+                <button id="digit" class="button" onclick="cal()">=</button>
+                <button id="symbol" class="button" onclick="display('*')">x</button>
+            </div>
+        </div>
+    </div>
+    <script src="Script.js"></script>
+</body>
+
+</html>

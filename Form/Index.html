@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style.css" />
+</head>
+
+<body>
+    <div class="box">
+        <form class="form" id="form" >
+            <div class="input-control">
+                <label for="firstName">First Name</label>
+                <input id="firstName" type="text">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="lastName">Last Name</label>
+                <input id="lastName" name="lastName" type="text">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="dob">Date of Birth</label>
+                <input id="dob" name="dob" type="date">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="country">Country</label>
+                <select id="countries">
+                    <option value="choose">Choose Your Country</option>
+                    <option value="Bharat">Bharat</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Canada">Canada</option>
+                </select>
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="gender">Gender</label>
+                <input id="maleCheckbox" type="checkbox" value="Male"e>Male
+                <input id="femaleCheckbox" type="checkbox" value="Female">Female
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="profession">Profession</label>
+                <input id="profession" name="profession" type="text">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="mobile">Mobile</label>
+                <input id="mobile" name="mobile" type="tel">
+                <div class="error"></div>
+            </div>
+            <div class="">
+                <button type="submit" id="validation">Submit</button>
+                <button type="button" onclick="resetForm()">Reset</button>
+            </div>
+
+        </form>
+        <div class="form-details"  id="form-details">
+            <div class="details" id="fname"></div>
+            <div class="details" id="lname"></div>
+            <div class="details" id="dateofbirth"></div>
+            <div class="details" id="gender"></div>
+            <div class="details" id="country"></div>
+            <div class="details" id="pro"></div>
+            <div class="details" id="em"></div>
+            <div class="details" id="mob"></div>
+            <button type="button" onclick="closePopUp()">close</button>
+        </div>
+    </div>
+    <script src="Script.js"></script>
+</body>
+
+</html>
